@@ -1,157 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Mr. Pasta | Authentic Italian Cuisine</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<section id="menu" class="section">
+  <h2>Full Menu</h2>
 
-<style>
-body { margin:0; font-family:Arial; background:#fff; color:#333;}
-header { background:#111; color:#fff; padding:15px; text-align:center;}
-nav a { color:white; margin:0 10px; text-decoration:none; }
-
-.hero {
-  background:url('https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb') center/cover;
-  height:70vh; display:flex; align-items:center; justify-content:center;
-  color:white; text-align:center;
-}
-
-.section { padding:40px 20px; max-width:1100px; margin:auto;}
-h2 { text-align:center; color:#b22222;}
-
-.grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
-}
-
-.card {
-  box-shadow:0 4px 10px rgba(0,0,0,0.1);
-  border-radius:10px;
-  overflow:hidden;
-}
-
-.card img { width:100%; height:180px; object-fit:cover;}
-.card h3 { margin:10px;}
-
-.menu-section { margin-bottom:30px;}
-.menu-item {
-  display:flex;
-  justify-content:space-between;
-  border-bottom:1px solid #ddd;
-  padding:8px 0;
-}
-
-footer { background:#111; color:white; text-align:center; padding:20px;}
-</style>
-</head>
-
-<body>
-
-<header>
-  <h1>Mr. Pasta</h1>
-  <nav>
-    <a href="#menu">Menu</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
-<div class="hero">
-  <div>
-    <h1>Homemade Italian Food</h1>
-    <p>Fresh pasta, classic recipes, real flavor</p>
-  </div>
-</div>
-
-<!-- PHOTO GALLERY -->
-<section id="gallery" class="section">
-  <h2>Our Food</h2>
-  <div class="grid">
+  <!-- PASTA -->
+  <div class="menu-section">
+    <h3>Pasta & Italian Dishes</h3>
 
     <div class="card">
       <img src="https://images.unsplash.com/photo-1588013273468-315fd88ea34c">
-      <h3>Spaghetti & Meatballs</h3>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1603079841523-f2c6d84f5e7a">
-      <h3>Chicken Parmigiana</h3>
+      <h4>Spaghetti & Meatballs</h4>
+      <p>Classic Italian-American pasta with tomato sauce and meatballs.</p>
     </div>
 
     <div class="card">
       <img src="https://images.unsplash.com/photo-1604908554027-31c8dbe2a06d">
-      <h3>Lasagna</h3>
+      <h4>Lasagna</h4>
+      <p>Layered pasta with meat, ricotta, and mozzarella cheese.</p>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1576402187878-974f70c890a5">
-      <h3>Cannoli</h3>
+      <img src="https://images.unsplash.com/photo-1625944525903-b0c4cdd1a1c9">
+      <h4>Stuffed Shells</h4>
+      <p>Large pasta shells filled with creamy ricotta and baked.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9">
+      <h4>Spinach Ravioli</h4>
+      <p>Fresh ravioli stuffed with spinach and cheese.</p>
     </div>
 
   </div>
-</section>
 
-<!-- FULL MENU -->
-<section id="menu" class="section">
-  <h2>Full Menu</h2>
-
-  <div class="menu-section">
-    <h3>Pasta</h3>
-    <div class="menu-item"><span>Spaghetti & Meatballs</span><span>$10</span></div>
-    <div class="menu-item"><span>Spaghetti & Meat Sauce</span><span>$15</span></div>
-    <div class="menu-item"><span>Ravioli</span><span>$10</span></div>
-    <div class="menu-item"><span>Lasagna</span><span>$15</span></div>
-    <div class="menu-item"><span>Baked Ziti</span><span>$13</span></div>
-  </div>
-
+  <!-- ENTREES -->
   <div class="menu-section">
     <h3>Entrees</h3>
-    <div class="menu-item"><span>Chicken Parmigiana</span><span>$15</span></div>
-    <div class="menu-item"><span>Eggplant Parmigiana</span><span>$14</span></div>
-    <div class="menu-item"><span>Sausage & Peppers</span><span>$12</span></div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1603079841523-f2c6d84f5e7a">
+      <h4>Chicken Parmigiana</h4>
+      <p>Breaded chicken topped with sauce and melted cheese.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1604908177522-402e9c8baf5d">
+      <h4>Eggplant Parmigiana</h4>
+      <p>Fried eggplant layered with sauce and cheese.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+      <h4>Sausage & Peppers</h4>
+      <p>Italian sausage with sautéed peppers and onions.</p>
+    </div>
+
   </div>
 
+  <!-- SANDWICHES -->
   <div class="menu-section">
     <h3>Sandwiches</h3>
-    <div class="menu-item"><span>Meatball Sandwich</span><span>$9</span></div>
-    <div class="menu-item"><span>Chicken Parm Sandwich</span><span>$10</span></div>
-    <div class="menu-item"><span>Sausage Sandwich</span><span>$9</span></div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1606756790138-261d2b21cd3e">
+      <h4>Meatball Sandwich</h4>
+      <p>Meatballs in marinara on fresh bread.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1606755962773-0c9c42d6c0d4">
+      <h4>Chicken Parm Sandwich</h4>
+      <p>Crispy chicken with sauce and melted cheese.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1598514982769-6d88e4d5ec07">
+      <h4>Italian Sub</h4>
+      <p>Classic deli meats, cheese, lettuce, tomato.</p>
+    </div>
+
   </div>
 
+  <!-- SOUPS -->
   <div class="menu-section">
-    <h3>Sides</h3>
-    <div class="menu-item"><span>Garlic Bread</span><span>$2</span></div>
-    <div class="menu-item"><span>Side Salad</span><span>$5</span></div>
-    <div class="menu-item"><span>Soup</span><span>$6</span></div>
+    <h3>Soups</h3>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1547592180-85f173990554">
+      <h4>Minestrone</h4>
+      <p>Vegetable soup with pasta and beans.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1604908177161-c2e0c72e0c8e">
+      <h4>Pasta Fagioli</h4>
+      <p>Traditional Italian bean and pasta soup.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3">
+      <h4>Chicken Noodle Soup</h4>
+      <p>Classic homemade chicken soup.</p>
+    </div>
+
   </div>
 
+  <!-- DESSERT -->
   <div class="menu-section">
     <h3>Desserts</h3>
-    <div class="menu-item"><span>Cannoli</span><span>$4</span></div>
-    <div class="menu-item"><span>Tiramisu</span><span>$5</span></div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1576402187878-974f70c890a5">
+      <h4>Cannoli</h4>
+      <p>Sweet ricotta-filled pastry shells.</p>
+    </div>
+
   </div>
 
 </section>
-
-<!-- CONTACT -->
-<section id="contact" class="section">
-  <h2>Contact</h2>
-  <p><strong>📍</strong> 159 Ridge Rd, North Arlington, NJ</p>
-
-  <p><strong>📞</strong> 
-    <a href="tel:+12019915959">(201) 991-5959</a>
-  </p>
-
-  <iframe 
-    src="https://www.google.com/maps?q=Mr+Pasta+North+Arlington+NJ&output=embed"
-    width="100%" height="300" style="border:0;">
-  </iframe>
-</section>
-
-<footer>
-  <p>© 2026 Mr. Pasta</p>
-</footer>
-
-</body>
-</html>
