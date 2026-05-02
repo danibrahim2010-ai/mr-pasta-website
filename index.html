@@ -2,27 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Mr. Pasta | Homemade Since 1959</title>
+  <title>Mr. Pasta | Authentic Italian Cuisine</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #fafafa;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff;
       color: #333;
     }
 
     header {
-      background: #b22222;
+      background: rgba(0,0,0,0.6);
       color: white;
       padding: 20px;
-      text-align: center;
-    }
-
-    nav {
-      background: #333;
-      padding: 10px;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      z-index: 10;
       text-align: center;
     }
 
@@ -33,46 +31,96 @@
       font-weight: bold;
     }
 
-    nav a:hover {
-      color: #f4c542;
-    }
-
     .hero {
-      padding: 60px;
+      height: 90vh;
+      background: url('https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-      background: url('https://images.unsplash.com/photo-1608759266335-9c5d3c1b3d2c') no-repeat center/cover;
       color: white;
     }
 
-    .container {
-      padding: 30px;
-      max-width: 1000px;
+    .hero h1 {
+      font-size: 60px;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 20px;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #b22222;
+      color: white;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1100px;
       margin: auto;
     }
 
     h2 {
-      color: #b22222;
-    }
-
-    .menu-item {
-      display: flex;
-      justify-content: space-between;
-      border-bottom: 1px solid #ddd;
-      padding: 8px 0;
-    }
-
-    footer {
-      background: #333;
-      color: white;
       text-align: center;
-      padding: 15px;
-      margin-top: 30px;
+      color: #b22222;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fafafa;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 10px;
+    }
+
+    .card p {
+      margin: 0 10px 10px;
     }
 
     .contact {
       background: #f4f4f4;
+      border-radius: 10px;
+      padding: 30px;
+      text-align: center;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
       padding: 20px;
-      border-radius: 8px;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -80,72 +128,75 @@
 <body>
 
 <header>
-  <h1>Mr. Pasta</h1>
-  <p>Homemade Since 1959</p>
+  <h2>Mr. Pasta</h2>
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#menu">Menu</a>
-  <a href="#contact">Contact</a>
-</nav>
-
 <section class="hero">
-  <h2>Authentic Italian Comfort Food</h2>
-  <p>Fresh, homemade pasta and classic dishes made with tradition</p>
+  <div>
+    <h1>Authentic Italian Food</h1>
+    <p>Homemade pasta. Family recipes. Since 1959.</p>
+    <button class="btn">Order Now</button>
+  </div>
 </section>
 
-<div class="container">
+<section id="menu" class="section">
+  <h2>Popular Dishes</h2>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>
-      Mr. Pasta is a local Italian deli and restaurant in North Arlington, NJ,
-      known for its homemade pasta, sauces, and classic Italian dishes.
-      A neighborhood favorite, it offers dine-in, takeout, and catering options
-      with a focus on quality ingredients and traditional recipes. :contentReference[oaicite:1]{index=1}
-    </p>
-  </section>
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1588013273468-315fd88ea34c">
+      <h3>Spaghetti & Meatballs</h3>
+      <p>Classic homemade pasta with rich tomato sauce.</p>
+    </div>
 
-  <section id="menu">
-    <h2>Menu Highlights</h2>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1603079841523-f2c6d84f5e7a">
+      <h3>Chicken Parmigiana</h3>
+      <p>Crispy chicken topped with sauce & melted cheese.</p>
+    </div>
 
-    <h3>Pasta Dishes</h3>
-    <div class="menu-item"><span>Spaghetti & Meatball</span><span>$10</span></div>
-    <div class="menu-item"><span>Spaghetti & Meat Sauce</span><span>$15</span></div>
-    <div class="menu-item"><span>Ravioli & Meatball</span><span>$10</span></div>
-    <div class="menu-item"><span>Lasagna</span><span>$15</span></div>
-    <div class="menu-item"><span>Chicken Parmigiana</span><span>$15</span></div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1604908554027-31c8dbe2a06d">
+      <h3>Lasagna</h3>
+      <p>Layered pasta with meat, cheese, and sauce.</p>
+    </div>
 
-    <h3>Sandwiches</h3>
-    <div class="menu-item"><span>Meatball Sandwich</span><span>$9</span></div>
-    <div class="menu-item"><span>Italian Sausage</span><span>$9</span></div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1576402187878-974f70c890a5">
+      <h3>Cannoli</h3>
+      <p>Sweet ricotta-filled Italian dessert.</p>
+    </div>
+  </div>
+</section>
 
-    <h3>Sides</h3>
-    <div class="menu-item"><span>Soup</span><span>$6</span></div>
-    <div class="menu-item"><span>Garlic Bread</span><span>$2</span></div>
+<section id="about" class="section">
+  <h2>About Us</h2>
+  <p style="text-align:center; max-width:700px; margin:auto;">
+    Mr. Pasta is a local Italian favorite in North Arlington, NJ.
+    Known for homemade pasta, sauces, and traditional recipes,
+    we’ve been serving the community with authentic Italian comfort food for decades.
+  </p>
+</section>
 
-    <h3>Desserts</h3>
-    <div class="menu-item"><span>Cannoli</span><span>-</span></div>
-    <div class="menu-item"><span>Tiramisu</span><span>-</span></div>
-  </section>
+<section id="contact" class="section">
+  <h2>Visit Us</h2>
 
-  <section id="contact" class="contact">
-    <h2>Contact & Location</h2>
-    <p><strong>Address:</strong> 159 Ridge Rd, North Arlington, NJ</p>
-    <p><strong>Phone:</strong> (201) 991-5959</p>
-    <p><strong>Hours:</strong></p>
-    <ul>
-      <li>Tue–Fri: 9AM – 5PM</li>
-      <li>Saturday: 9AM – 3PM</li>
-      <li>Sunday & Monday: Closed</li>
-    </ul>
-  </section>
+  <div class="contact">
+    <p><strong>📍 Address:</strong> 159 Ridge Rd, North Arlington, NJ</p>
+    <p><strong>📞 Phone:</strong> (201) 991-5959</p>
+    <p><strong>Hours:</strong> Tue–Fri 9–5 | Sat 9–3</p>
 
-</div>
+    <iframe src="https://maps.google.com/maps?q=159%20Ridge%20Rd%20North%20Arlington%20NJ&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+  </div>
+</section>
 
 <footer>
-  <p>© 2026 Mr. Pasta | All Rights Reserved</p>
+  <p>© 2026 Mr. Pasta | Built with GitHub Pages</p>
 </footer>
 
 </body>
